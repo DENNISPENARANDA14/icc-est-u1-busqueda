@@ -20,6 +20,12 @@ public class showConsole {
         return code;
     }
 
+    public String inputName(){
+        System.out.println("ingrese el nombre a buscar");
+        String name = scanner.next();
+        return name;
+    }
+
     public void showMessage(String message){
         System.out.println(message);
     }
