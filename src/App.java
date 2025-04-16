@@ -1,12 +1,12 @@
 import java.lang.reflect.Method;
 import java.util.Arrays;
 import controladores.MetodosBusqueda;
+import models.persona;
 import controladores.*;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
-        System.out.println("Hello, World!");
+
         int[] datos = {2, 255, 10, 0, 11, 1172, 1};
         System.out.println("Array: " + Arrays.toString(datos));
         MetodosBusqueda mb= new MetodosBusqueda();
@@ -28,5 +28,19 @@ public class App {
         } else {
             System.out.println("Elemento no encontrado");
         }
+
+
+        persona [] personas= new persona[7];
+        personas[0]= new persona(101, "JUAN");
+        personas[1]= new persona(102, "MARIA");
+        personas[2]= new persona(103, "CARLO");
+        personas[3]= new persona(104, "ANA");
+        personas[4]= new persona(105, "LUIS");
+        personas[5]= new persona(106, "SOFIA");
+        personas[6]= new persona(107, "PEDRO");
+        MetodosBusqueda mb1 = new MetodosBusqueda(personas);  
+        
+        
+
     }
 }
